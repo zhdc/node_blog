@@ -1,0 +1,25 @@
+{
+  "name": "node_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "save": "^2.3.1",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhdc/node_blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhdc/node_blog/issues"
+  },
+  "homepage": "https://github.com/zhdc/node_blog#readme"
+}

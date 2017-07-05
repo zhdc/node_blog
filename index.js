@@ -3,7 +3,7 @@ var path = require("path");
 var home_ctl = require("./controller/home_ctl.js");
 var app = express();
 
-app.set("port",process.env.PORT || 3000);
+app.set("port",process.env.PORT || 80);
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use("/home",home_ctl);
 //404页面

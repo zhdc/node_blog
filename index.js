@@ -5,7 +5,7 @@ var app = express();
 
 app.set("port",process.env.PORT || 80);
 app.use(express.static(path.join(__dirname, 'assets')));
-app.use("/home",home_ctl);
+app.use("/",home_ctl);
 //404页面
 app.use(function(req,res){
 	res.type("text/plain");

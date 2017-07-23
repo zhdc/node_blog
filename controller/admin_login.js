@@ -1,10 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-router.get("/login",function(req,res){
+router.post("/login",function(req,res){
+	var user_name = req.body.user_name;
+	var password = req.body.password;
+	console.log(user_name+"--"+password);
+	res.type('application/json');
+    res.jsonp({code:1});
+	/*
 	req.session.sign = true;
 	console.log(req.session.sign);
 	res.send("admin login");
+	*/
 });
 
 router.get("/success",function(req,res){

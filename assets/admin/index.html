@@ -3,8 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>admin</title>
+<link href="../css/layui.css" rel="stylesheet"/>
+<link href="../css/common.css" rel="stylesheet"/>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route.min.js"></script>
+<script src="../js/admin/common.js"></script>
+<script src="../js/admin/index.js"></script>
 </head>
-<body>
-admin
+<body ng-controller="initController">
+	<div style="width:400px;height:400px;background:#ffffff;padding:20px;position:absolute;top:10%;left:50%;margin-left:-220px;">
+		<form class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">用户名：</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input" ng-model="user_name"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">密码：</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input" ng-model="password"/>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn" ng-click="login()">立即登录</button>
+				</div>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
